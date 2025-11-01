@@ -1,33 +1,44 @@
-body{
-    margin-left: 300px;
-    margin-top: 300px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
     background-color: rgb(58, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .global-window {
-    border: 2px solid rgb(79, 232, 232);
-    width: 280px;
-    height: 300px;
+    border: 5px solid rgb(79, 232, 232);
+    width: 450px;
     border-radius: 15px;
-
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
     align-items: center;
-    justify-content: center;
+    gap: 30px;
 }
 
-.window{
-    width: 250px;
-    height: 200px;
+.window {
+    width: 100%;
     text-align: center;
     border-radius: 5px;
     border: 2px solid rgb(79, 232, 232);
     background-color: rgb(79, 232, 232);
 }
 
-.button-style{
+.button-container {
+    width: 100%;
+    border: 2px solid rgb(79, 232, 232);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-style {
     background-color: rgb(79, 232, 232);
     border: 2px solid  rgb(79, 232, 232);
     border-radius: 3px;
@@ -42,13 +53,11 @@ body{
     color: red;
     font-size: 50px;
     font-weight: bold;
-    padding: 30px;
 }
 
 .not-error {
     color: rrgb(59, 55, 55);
     font-size: 50px;
     font-weight: bold;
-    padding: 30px;
 }
 

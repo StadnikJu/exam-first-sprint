@@ -1,4 +1,5 @@
 import { Button } from "./Button";
+import { WindowCount } from "./WindowCount";
 
 type CountType = {
     incrementCount: () => void;
@@ -12,8 +13,8 @@ export const Count = ({incrementCount, resetCount, counter, maxCounter, minCount
 
     return (
         <>
-            <div className="window"><p className={counter === maxCounter ? "error" : "not-error"}>{counter}</p></div>
-            <div>
+        <WindowCount counter={counter} maxCounter={maxCounter}/>
+            <div className="button-container">
                 <Button title={"inc"} className="button-style" onClick={incrementCount} disabled={counter === maxCounter}/>
                 <Button title={"reset"} className="button-style" onClick={resetCount} disabled={counter === minCounter}/>
             </div>

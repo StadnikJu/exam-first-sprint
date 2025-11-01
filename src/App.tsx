@@ -5,7 +5,7 @@ import { Count } from './components/Count';
 function App() {
   const minCounter = 0;
   const maxCounter = 5;
-  const[counter, setCounter] = useState(minCounter);
+  const[counter, setCounter] = useState<number>(minCounter);
 
   function incrementCont() {
     if(counter < maxCounter){
